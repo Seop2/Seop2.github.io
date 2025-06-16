@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!-- 문서 언어 설정: SEO/접근성에 중요 -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문자 인코딩 선언 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 블로그</title>
+    <!-- 브라우저 탭 제목 -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- CSS 연결 -->
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>나의 블로그</h1>
+    </header>
+
+    <!-- ① 글쓰기 버튼 -->
+    <div class="container">
+      <button id="open-modal-btn">글쓰기</button>
+    </div>
+
+    <!-- ② 모달 오버레이 -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <!-- ③ 모달 닫기 버튼 -->
+        <span id="close-modal-btn" class="modal-close">&times;</span>
+        <!-- ④ 입력 폼 -->
+        <form id="modal-form">
+          <h2>새 글 작성</h2>
+          <input type="text" id="modal-title" placeholder="제목" required />
+          <textarea id="modal-content" placeholder="내용" required></textarea>
+          <button type="submit">저장</button>
+        </form>
+      </div>
+    </div>
+
+    <main id="post-list" class="container"></main>
+
+    <footer class="site-footer">&copy; 2025 MyBlog</footer>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
